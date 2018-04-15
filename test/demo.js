@@ -40,7 +40,7 @@ describe('Admin Ui Testing', function() {
 
 
   after(function() {
-
+driver.clode();
   });
 
   it('Test For List elements for partner', async function(done) {
@@ -57,7 +57,7 @@ describe('Admin Ui Testing', function() {
 ///html/body/section/div/router-view/section/div[2]/router-view/div[1]/ul/li[3]/a
 
 
-await sleep(2000);
+await sleep(4000);
 
        //console.log("here"+rcode);
         /*expect(res).to.have.status(rcode);
@@ -80,9 +80,9 @@ e.map(function (elem) {
 
         //expect(res.body[0].id).to.be.an('integer');
       })
-      await sleep(3000);
+      await sleep(5000);
    await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/div[1]/ul/li[3]/a")).click();
-  await sleep(3000);
+  await sleep(5000);
   var o;
  await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select")).findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select/option[1]")).click();
   var element = await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select"));
