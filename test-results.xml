@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="32.946" tests="1" failures="2">
+  <testsuite name="Root Suite" timestamp="2018-04-15T10:55:48" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Admin Ui Testing" timestamp="2018-04-15T10:55:48" tests="1" file="C:\Users\shadab.khan\Documents\GitHub\nodetest\test\demo.js" failures="2" time="32.946">
+    <testcase name="Admin Ui Testing Test For List elements for partner" time="32.896" classname="Test For List elements for partner">
+      <failure><![CDATA[AssertionError: expected 'Organization Name' to not equal 'Organization Name'
+    at Context.<anonymous> (test\demo.js:94:20)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure>
+    </testcase>
+    <testcase name="Admin Ui Testing &quot;after all&quot; hook" time="0.05" classname="&quot;after all&quot; hook">
+      <failure><![CDATA[TypeError: driver.clode is not a function
+    at Context.<anonymous> (test\demo.js:43:8)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
