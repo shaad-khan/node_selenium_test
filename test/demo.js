@@ -40,7 +40,7 @@ describe('Admin Ui Testing', function() {
 
 
   after(function() {
-driver.clode();
+driver.close();
   });
 
   it('Test For List elements for partner', async function(done) {
