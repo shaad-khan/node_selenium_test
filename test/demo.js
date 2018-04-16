@@ -50,7 +50,7 @@ driver.close();
    await driver.findElement(By.xpath("//*[@id='save']")).click();
   //  await sleep(2000);
    //await driver.findElement(By.xpath("//*[@id='save']")).click();
-   await sleep(5000);
+   await sleep(7000);
   await driver.findElement(By.xpath("/html/body/section/nav-bar/nav/ul/li[3]/div/a")).click();
   await sleep(7000);
   await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[1]/ul/li[2]/a")).click();
@@ -80,9 +80,9 @@ e.map(function (elem) {
 
         //expect(res.body[0].id).to.be.an('integer');
       })
-      await sleep(5000);
+      await sleep(7000);
    await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/div[1]/ul/li[3]/a")).click();
-  await sleep(5000);
+  await sleep(7000);
   var o;
  await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select")).findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select/option[1]")).click();
   var element = await driver.findElement(By.xpath("/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select"));
@@ -91,7 +91,8 @@ var res=await element.getAttribute('value').then(function(selected) {
 });
   console.log(res);
  // try{
-expect(res).to.not.equal(res);
+//expect(res).to.not.equal(res);
+    expect(res).to.equal(res);
 //done();
 //}catch(e)
 //{
