@@ -91,8 +91,8 @@ var res=await element.getAttribute('value').then(function(selected) {
 });
   console.log(res);
  // try{
-//expect(res).to.not.equal(res);
-    expect(res).to.equal(res);
+expect(res).to.not.equal(res);
+ //   expect(res).to.equal(res);
 //done();
 //}catch(e)
 //{
