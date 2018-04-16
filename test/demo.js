@@ -92,7 +92,7 @@ var res=await element.getAttribute('value').then(function(selected) {
   console.log(res);
   try{
 expect(res).to.equal(res);
-done();
+//done();
 }catch(e)
 {
   done(e);
