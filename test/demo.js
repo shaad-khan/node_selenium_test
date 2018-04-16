@@ -43,7 +43,7 @@ describe('Admin Ui Testing', function() {
 driver.close();
   });
 
-  it('Test For List elements for partner', async function(done) {
+  it('Test For List elements for partner', async function() {
     await sleep(3000);
     await driver.findElement(By.xpath("/html/body/compose[2]/div/div/form/div[1]/material-select/div/select")).findElement(By.xpath("/html/body/compose[2]/div/div/form/div[1]/material-select/div/select/option[5]")).click();
    await sleep(2000);
@@ -90,13 +90,13 @@ var res=await element.getAttribute('value').then(function(selected) {
     return selected;
 });
   console.log(res);
-  try{
-expect(res).to.equal(res);
+ // try{
+expect(res).to.not.equal(res);
 //done();
-}catch(e)
-{
-  done(e);
-}
+//}catch(e)
+//{
+ // done(e);
+//}
 //done();
 });
 
